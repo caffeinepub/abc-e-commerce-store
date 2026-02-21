@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Outfit:wght@100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.875rem;
+    /* Emerald e-commerce theme - warm cream backgrounds */
+    --background: 0.98 0.01 85;
+    --foreground: 0.25 0.02 155;
+    --card: 1 0 0;
+    --card-foreground: 0.25 0.02 155;
+    --popover: 1 0 0;
+    --popover-foreground: 0.25 0.02 155;
+    /* Vibrant emerald primary */
+    --primary: 0.58 0.18 165;
+    --primary-foreground: 1 0 0;
+    /* Coral secondary for CTAs */
+    --secondary: 0.68 0.16 35;
+    --secondary-foreground: 0.15 0.02 35;
+    --muted: 0.95 0.01 85;
+    --muted-foreground: 0.52 0.02 155;
+    /* Lighter emerald accent */
+    --accent: 0.88 0.08 165;
+    --accent-foreground: 0.25 0.02 155;
+    --destructive: 0.55 0.22 25;
+    --destructive-foreground: 1 0 0;
+    --border: 0.90 0.02 85;
+    --input: 0.92 0.02 85;
+    --ring: 0.58 0.18 165;
+    --chart-1: 0.58 0.18 165;
+    --chart-2: 0.68 0.16 35;
+    --chart-3: 0.48 0.15 200;
+    --chart-4: 0.72 0.14 85;
+    --chart-5: 0.62 0.12 285;
+    --sidebar: 0.98 0.01 85;
+    --sidebar-foreground: 0.25 0.02 155;
+    --sidebar-primary: 0.58 0.18 165;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.95 0.01 85;
+    --sidebar-accent-foreground: 0.25 0.02 155;
+    --sidebar-border: 0.90 0.02 85;
+    --sidebar-ring: 0.58 0.18 165;
+  }
+
+  .dark {
+    /* Deep forest green dark mode */
+    --background: 0.18 0.04 155;
+    --foreground: 0.95 0.01 85;
+    --card: 0.22 0.04 155;
+    --card-foreground: 0.95 0.01 85;
+    --popover: 0.20 0.04 155;
+    --popover-foreground: 0.95 0.01 85;
+    /* Bright emerald for dark mode */
+    --primary: 0.72 0.20 165;
+    --primary-foreground: 0.15 0.04 155;
+    /* Softer coral for dark */
+    --secondary: 0.70 0.14 35;
+    --secondary-foreground: 0.15 0.04 155;
+    --muted: 0.25 0.03 155;
+    --muted-foreground: 0.65 0.02 85;
+    --accent: 0.35 0.08 165;
+    --accent-foreground: 0.95 0.01 85;
+    --destructive: 0.60 0.20 25;
+    --destructive-foreground: 0.95 0.01 85;
+    --border: 0.30 0.04 155;
+    --input: 0.28 0.04 155;
+    --ring: 0.72 0.20 165;
+    --chart-1: 0.72 0.20 165;
+    --chart-2: 0.70 0.14 35;
+    --chart-3: 0.55 0.16 200;
+    --chart-4: 0.75 0.12 85;
+    --chart-5: 0.65 0.14 285;
+    --sidebar: 0.20 0.04 155;
+    --sidebar-foreground: 0.95 0.01 85;
+    --sidebar-primary: 0.72 0.20 165;
+    --sidebar-primary-foreground: 0.15 0.04 155;
+    --sidebar-accent: 0.25 0.03 155;
+    --sidebar-accent-foreground: 0.95 0.01 85;
+    --sidebar-border: 0.30 0.04 155;
+    --sidebar-ring: 0.72 0.20 165;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
